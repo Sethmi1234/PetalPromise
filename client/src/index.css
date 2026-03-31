@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: extra romantic styles */
+body {
+  @apply bg-lightPink font-normal;
+}
+
+/* src/index.css */
+@keyframes float {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-200px); opacity: 0; }
+}
+
+.heart {
+  position: absolute;
+  animation: float 5s infinite;
+}
